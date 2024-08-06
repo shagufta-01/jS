@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Memoization in JavaScript is a technique used to optimize the performance of functions by storing the results of expensive 
+    function calls and returning the cached result when the same inputs occur again. This approach can significantly improve the
+     performance of applications that repeat function calls with the same parameters.
+
+    Here are the key concepts and ways to implement memoization in JavaScript:
+    
+    What is memoization?: Memoization is an optimization technique that stores the results of function calls in a cache, and retrieves 
+    the results from the cache when the same inputs occur again.
+    How does memoization work?: Memoization works by storing the
+     previous results of a function call and using those results the next time the function runs. This can be especially useful 
+     in computation-heavy apps that repeat function calls on the same parameters.
+    When to use memoization?: Memoization is useful when:
+    You have a function that is called multiple times with the same parameters.
+    The function performs expensive computations that can be cached.
+    You want to speed up the performance of your application.
+    How to implement memoization?: To implement memoization, you can use a cache object to store the 
+    results of function calls. When the function is called, it checks whether the result is present in the cache 
+    before running. If it is, it returns the cached results. Otherwise, it executes the function and stores the result in the cache.
+</body>
+<script src="Memorisation.js"></script>
+</html>

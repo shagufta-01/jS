@@ -1,0 +1,23 @@
+// const now  = new Date()
+// console.log(now.toDateString())
+// console.log(now.getDate())
+// console.log(now.getDay())
+// console.log(now.getHours())
+// console.log(now.getFullYear())
+// let noww = new Date('jan 4 2002')
+// console.log(noww.toDateString())
+// console.log(now.getMilliseconds())
+// console.log(now.getMinutes())
+// console.log(now.getSeconds())
+// console.log(now.getMonth())
+// SET
+// const now  = new Date()
+// now.setDate(31)
+// now.setFullYear(2020)
+// now.setMilliseconds(2)
+// now.setHours(2)
+// now.setSeconds(2)
+// console.log(now.toDateString() +"/"+now.getMonth()+"/"+now.getFullYear())
+// const time = new Date();
+// const time = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+// console.log(time)

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function with "This" Keyword</h1>
+    <script>
+// console.log(this)
+const person={
+    test(){
+        let self= this
+        // console.log(this)
+        setTimeout(()=>{
+            // console.log(this)
+            console.log(self)
+        },2000)
+    }
+}
+// console.log(person.test())
+person.test()
+    </script>
+</body>
+</html>

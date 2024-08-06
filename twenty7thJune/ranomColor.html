@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="container">
+        <h1>Random Color Genereate</h1>
+        <button onclick="ChangeColor()">Click Me</button>
+    </div>
+    <script>
+let colors =[ "Blue", "Red"," Yellow"," Violet"," Orange"," Green","Blue-Violet","Red-Violet","Yellow-Green", "Red-Orange", "Yellow-Orange", "Blue-Green"
+    
+]
+let body = document.querySelector(".body")
+let container = document.querySelector(".container")
+        function ChangeColor(){
+            let random = Math.floor(Math.random()*colors.length)
+            console.log(random)
+            let color = colors[random]
+// console.log(color)
+
+body.style.background = color
+        }
+    </script>
+</body>
+</html>

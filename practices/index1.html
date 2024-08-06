@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>type number here....</h2>
+    <input type="text" id="input" inputmode="numeric" pattern="[0-9]*">
+    <!-- <button onmousedown="hello()">click me</button> -->
+</body>
+<script>
+
+// if(parseFloat(e.target.value) > (settingCk?.battleLimit || settingData?.battleLimit)){
+//       setErrorState(Please Enter Amount Less than Equal To ${settingCk?.battleLimit || settingData?.battleLimit})
+//       setShowPopup(true)
+//       setSuccessState(false)
+//       setBattleAmt('')
+//     }else if(e.target.value.startsWith("0")){
+//       setBattleAmt('')
+//     }else if(isNaN(parseFloat(e.target.value))){
+//       setBattleAmt('')
+//     }else{
+//       setBattleAmt(e.target.value.replace(/\D/g, ''))
+//     }
+
+    let inputBtn = document.getElementById("input")
+    inputBtn.addEventListener("input",()=>{
+      //m-1  // inputBtn.value=inputBtn.value.replace(/\D/g, '')
+      //m-2  // if (!/^[0-9]+$/.test(inputBtn.value)) {
+        //     inputBtn.value = '';
+        // }
+       console.log(isNaN( parseFloat('d')))
+if ((!parseFloat(inputBtn.value))) {//m-3
+  console.log('Please enter a number');
+
+
+    inputBtn.value=''
+
+}
+else if( isNaN( parseFloat(inputBtn.value[inputBtn.value.length-1]))){
+    let string = inputBtn.value.slice(0,inputBtn.value.length-1)
+    inputBtn.value=string
+ 
+    }
+
+
+    })
+    let n =parseFloat(inputBtn.value)
+
+    // function hello(){
+    //     console.log("Hello World")
+    // }
+    
+</script>
+</html>
